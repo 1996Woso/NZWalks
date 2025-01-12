@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NZWalks.API.Data;
 using NZWalks.API.Models.Domain;
 using NZWalks.API.Models.DTO;
+using NZWalks.API.Repositories;
 
 namespace NZWalks.API.Controllers
 {
@@ -11,18 +13,21 @@ namespace NZWalks.API.Controllers
     public class RegionsController : ControllerBase
     {
         private readonly NZWalksDbContext context;
-        public RegionsController(NZWalksDbContext context)
+        private readonly IRegionRepository regionRepos;
+
+        public RegionsController(NZWalksDbContext context, IRegionRepository regionRepos)
         {
             this.context = context;
+            this.regionRepos = regionRepos;
         }
         //Get All Regions
         //Get: http://localhost:portnumber/api/regions
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
             //Get data from db - Domain models
-            var regionsDM = context.Regions.ToList();
-            //Map Domain models to DTOs
+            var regionsDM =  await regionRepos.GetAllAsync();
+            //Map Domain models to DTOs(Data Transfer Objects)
             var regionsDTO = new List<RegionDTO>();
             foreach(var region in regionsDM)
             {
@@ -41,10 +46,10 @@ namespace NZWalks.API.Controllers
         //Get: http://localhost:portnumber/api/regions/{id}
         [HttpGet]
         [Route("{id:Guid}")]
-        public IActionResult GetById([FromRoute]Guid id)
+        public async Task<IActionResult> GetById([FromRoute]Guid id)
         {
             //Rgion Domain model
-            var regionDM = context.Regions.FirstOrDefault(x => x.Id == id);
+            var regionDM = await regionRepos.GetByIdAsync(id);
             //var region = context.Regions.Find(id);
             if(regionDM == null)
             {
@@ -65,7 +70,7 @@ namespace NZWalks.API.Controllers
         //POST methos to add new region
         //POST: https://localhost:portnumber/api/regions
         [HttpPost]
-        public IActionResult Create([FromBody] AddRegionRequestDTO region)
+        public async Task<IActionResult> Create([FromBody] AddRegionRequestDTO region)
         {
             //Map or convert DTO to DM
             var regionDM = new Region
@@ -75,8 +80,7 @@ namespace NZWalks.API.Controllers
                 Name = region.Name
             };
             //Use DM to create Region
-            context.Regions.Add(regionDM);
-            context.SaveChanges();
+            await regionRepos.CreateAsync(regionDM);
             //Map DM back to DTO
             var regionDTO = new RegionDTO
             {
@@ -91,20 +95,22 @@ namespace NZWalks.API.Controllers
         //PUT: https://localhost:portnumber/api/regions/{id}
         [HttpPut]
         [Route("{id:Guid}")]
-        public IActionResult Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDTO region)
+        public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequestDTO updateRegionRequestDTO)
         {
+            //Map DTO to DM
+            var regionDM = new Region
+            {
+                RegionImageUrl = updateRegionRequestDTO.RegionImageUrl,
+                Name = updateRegionRequestDTO.Name,
+                Code = updateRegionRequestDTO.Code
+            };
             //Check if region exists
-            var regionDM = context.Regions.FirstOrDefault(x => x.Id == id);
+            regionDM = await regionRepos.UpdateAsync(id, regionDM);
             if(regionDM == null)
             {
                 return NotFound();
             }
-            //Map DTO to DM
-            regionDM.RegionImageUrl = region.RegionImageUrl;
-            regionDM.Name = region.Name;
-            regionDM.Code = region.Code;
-            context.SaveChanges();
-            //Map DM to DTO
+            //Convert DM to DTO
             var regionDTO = new RegionDTO
             {
                 Id = regionDM.Id,
@@ -121,16 +127,13 @@ namespace NZWalks.API.Controllers
         //DELETE: https://localhost:portnumber/api/regions/{id}
         [HttpDelete]
         [Route("{id:guid}")]
-        public IActionResult Delete([FromRoute] Guid id)
+        public async Task<IActionResult> Delete([FromRoute] Guid id)
         {
-            //Check if region exists
-            var regionDM = context.Regions.FirstOrDefault(x => x.Id==id);
+            var regionDM = await regionRepos.DeleteAsync(id);
             if(regionDM == null)
             {
                 return NotFound();
             }
-            context.Regions.Remove(regionDM);
-            context.SaveChanges();
             //Optional-return deleted region
             //Map DM to DTO
             var regionDTO = new RegionDTO

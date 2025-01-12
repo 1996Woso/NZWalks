@@ -55,7 +55,7 @@
         "IsRequired": true
       },
       {
-        "Name": "region",
+        "Name": "updateRegionRequestDTO",
         "Type": "NZWalks.API.Models.DTO.UpdateRegionRequestDTO",
         "IsRequired": true
       }
