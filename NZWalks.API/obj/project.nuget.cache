@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LGne/6SC7/o=",
+  "dgSpecHash": "GOTkjPg7po8=",
   "success": true,
   "projectFilePath": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\eviwe\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\eviwe\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\eviwe\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\eviwe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

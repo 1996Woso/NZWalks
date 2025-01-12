@@ -171,3 +171,4 @@ C:\Users\eviwe\source\repos\Eviwe\NZWalks\NZWalks.API\obj\Debug\net8.0\refint\NZ
 C:\Users\eviwe\source\repos\Eviwe\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.pdb
 C:\Users\eviwe\source\repos\Eviwe\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.genruntimeconfig.cache
 C:\Users\eviwe\source\repos\Eviwe\NZWalks\NZWalks.API\obj\Debug\net8.0\ref\NZWalks.API.dll
+C:\Users\eviwe\source\repos\Eviwe\NZWalks\NZWalks.API\bin\Debug\net8.0\AutoMapper.dll

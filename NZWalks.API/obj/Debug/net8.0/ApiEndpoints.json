@@ -18,7 +18,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "region",
+        "Name": "addRegionRequestDTO",
         "Type": "NZWalks.API.Models.DTO.AddRegionRequestDTO",
         "IsRequired": true
       }

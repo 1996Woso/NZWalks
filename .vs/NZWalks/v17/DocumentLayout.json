@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\models\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\models\\dto\\addregionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\models\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\models\\dto\\regiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\mappings\\automaperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\mappings\\automaperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\repositories\\iregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +25,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|c:\\users\\eviwe\\source\\repos\\eviwe\\nzwalks\\nzwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A822CDDE-9C17-438A-A710-ECFACBD31F95}|NZWalks.API\\NZWalks.API.csproj|solutionrelative:nzwalks.api\\repositories\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +38,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddRegionRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Models\\DTO\\AddRegionRequestDTO.cs",
+              "RelativeDocumentMoniker": "NZWalks.API\\Models\\DTO\\AddRegionRequestDTO.cs",
+              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Models\\DTO\\AddRegionRequestDTO.cs",
+              "RelativeToolTip": "NZWalks.API\\Models\\DTO\\AddRegionRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T21:28:13.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Models\\DTO\\RegionDTO.cs",
+              "RelativeDocumentMoniker": "NZWalks.API\\Models\\DTO\\RegionDTO.cs",
+              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Models\\DTO\\RegionDTO.cs",
+              "RelativeToolTip": "NZWalks.API\\Models\\DTO\\RegionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T21:28:03.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "NZWalks.API\\Controllers\\RegionsController.cs",
+              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "NZWalks.API\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T19:40:43.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AutoMaperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Mappings\\AutoMaperProfiles.cs",
+              "RelativeDocumentMoniker": "NZWalks.API\\Mappings\\AutoMaperProfiles.cs",
+              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Mappings\\AutoMaperProfiles.cs",
+              "RelativeToolTip": "NZWalks.API\\Mappings\\AutoMaperProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T12:13:10.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Program.cs",
+              "RelativeDocumentMoniker": "NZWalks.API\\Program.cs",
+              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Program.cs",
+              "RelativeToolTip": "NZWalks.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T13:01:34.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SQLRegionRepository.cs",
               "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Repositories\\SQLRegionRepository.cs",
               "RelativeDocumentMoniker": "NZWalks.API\\Repositories\\SQLRegionRepository.cs",
               "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Repositories\\SQLRegionRepository.cs",
               "RelativeToolTip": "NZWalks.API\\Repositories\\SQLRegionRepository.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T12:47:05.569Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IRegionRepository.cs",
               "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Repositories\\IRegionRepository.cs",
               "RelativeDocumentMoniker": "NZWalks.API\\Repositories\\IRegionRepository.cs",
@@ -53,31 +130,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T12:43:41.526Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegionsController.cs",
-              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Controllers\\RegionsController.cs",
-              "RelativeDocumentMoniker": "NZWalks.API\\Controllers\\RegionsController.cs",
-              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Controllers\\RegionsController.cs",
-              "RelativeToolTip": "NZWalks.API\\Controllers\\RegionsController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAHoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T19:40:43.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Program.cs",
-              "RelativeDocumentMoniker": "NZWalks.API\\Program.cs",
-              "ToolTip": "C:\\Users\\eviwe\\source\\repos\\Eviwe\\NZWalks\\NZWalks.API\\Program.cs",
-              "RelativeToolTip": "NZWalks.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T13:01:34.146Z"
             }
           ]
         }
